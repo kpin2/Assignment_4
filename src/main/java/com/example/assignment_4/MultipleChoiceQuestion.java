@@ -5,6 +5,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
 public class MultipleChoiceQuestion extends Application {
@@ -16,6 +17,10 @@ public class MultipleChoiceQuestion extends Application {
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Multiple Choice Question");
+
+        Rectangle questionRect = new Rectangle(300, 50);
+
+
 
         Label questionLabel = new Label("What is the result of 2 + 2?");
         Button answerA = new Button("4");
@@ -53,7 +58,7 @@ public class MultipleChoiceQuestion extends Application {
 
         VBox layout = new VBox(10);
         layout.setPadding(new Insets(20, 20, 20, 20));
-        layout.getChildren().addAll(questionLabel, answerA, answerB, answerC, answerD);
+        layout.getChildren().addAll(questionLabel, answerA, answerB, answerC, answerD, questionRect);
 
         Scene scene = new Scene(layout, 300, 250);
         primaryStage.setScene(scene);
