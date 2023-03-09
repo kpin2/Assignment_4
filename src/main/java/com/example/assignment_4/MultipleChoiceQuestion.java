@@ -20,11 +20,11 @@ public class MultipleChoiceQuestion extends Application {
         Rectangle questionRect = new Rectangle(300, 50);
         questionRect.setStyle("-fx-fill: #FFFFFF; -fx-stroke: #000000; -fx-stroke-width: 2; -fx-opacity: 0.5;");
 
-        Label questionLabel = new Label("What is the result of 2 + 2?");
-        Button answerA = new Button("4");
-        Button answerB = new Button("5");
-        Button answerC = new Button("6");
-        Button answerD = new Button("7");
+        Label questionLabel = new Label("What is the result of 5*5?");
+        Button answerA = new Button("25");
+        Button answerB = new Button("16");
+        Button answerC = new Button("10");
+        Button answerD = new Button("4");
 
         answerA.setOnAction(e -> {
             answerA.setText("Correct!");
