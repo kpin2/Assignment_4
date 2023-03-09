@@ -19,6 +19,7 @@ public class MultipleChoiceQuestion extends Application {
         primaryStage.setTitle("Multiple Choice Question");
 
         Rectangle questionRect = new Rectangle(300, 50);
+        questionRect.setStyle("-fx-fill: #FFFFFF; -fx-stroke: #000000; -fx-stroke-width: 2; -fx-opacity: 0.5;");
 
 
 
