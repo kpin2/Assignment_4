@@ -56,7 +56,9 @@ public class MultipleChoiceQuestion extends Application {
 
         VBox layout = new VBox(10);
         layout.setPadding(new Insets(20, 20, 20, 20));
+
         layout.getChildren().addAll(questionLabel, answerA, answerB, answerC, answerD,questionRect);
+
 
         Scene scene = new Scene(layout, 300, 250);
         primaryStage.setScene(scene);
